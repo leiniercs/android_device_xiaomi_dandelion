@@ -131,15 +131,6 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.0
 
 # IMS
-PRODUCT_BOOT_JARS += \
-    mediatek-common \
-    mediatek-framework \
-    mediatek-ims-base \
-    mediatek-ims-common \
-    mediatek-telecom-common \
-    mediatek-telephony-base \
-    mediatek-telephony-common
-
 PRODUCT_PACKAGES += \
     ImsServiceBase
 
