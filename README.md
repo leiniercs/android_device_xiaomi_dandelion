@@ -1,0 +1,1 @@
+# Unified Android device tree for Redmi 9A/9A Sport/9AT/9i/10A/10A Sport

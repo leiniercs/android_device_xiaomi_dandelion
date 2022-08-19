@@ -1,0 +1,46 @@
+# FingerPrint
+/mnt/vendor/persist/goodix(/.*)? u:object_r:fp_data_file:s0
+/mnt/vendor/persist/fpc(/.*)?    u:object_r:fp_data_file:s0
+/data/vendor/fpdump(/.*)?        u:object_r:fp_data_file:s0
+/data/vendor/goodix(/.*)?        u:object_r:fp_data_file:s0
+/data/vendor/fpc(/.*)?           u:object_r:fp_data_file:s0
+/data/gf_data(/.*)?              u:object_r:fp_data_file:s0
+/dev/goodix_fp                   u:object_r:fp_device:s0
+
+# FPS Info
+/sys/module/primary_display/parameters/display_framerate_main      u:object_r:sysfs_fpsinfo:s0
+
+# Hals
+/system/bin/hw/android\.hardware\.light-service(/.*)?    u:object_r:mtk_hal_light_exec:s0
+/vendor/bin/hw/vendor\.xiaomi\.hardware\.displayfeature(/.*)?    u:object_r:hal_displayfeature_default_exec:s0
+/vendor/bin/hw/vendor\.xiaomi\.hardware\.citsensorservice(/.*)?  u:object_r:hal_citsensorservice_default_exec:s0
+
+# Light
+/vendor/bin/hw/android\.hardware\.light(/.*)?      u:object_r:hal_light_default_exec:s0
+
+# USB
+/vendor/bin/hw/android\.hardware\.usb(/.*)?      u:object_r:hal_usb_impl_exec:s0
+
+# Mi Thermald
+/vendor/bin/mi_thermald       u:object_r:mi_thermald_exec:s0
+/data/vendor/thermal(/.*)?    u:object_r:thermal_data_file:s0
+
+# Same Process HAL
+/vendor/lib(64)?/hw/vendor\.xiaomi\.hardware\.citsensorservice(/.*)?  u:object_r:same_process_hal_file:s0
+
+# DT2W Script
+/vendor/bin/dt2w_event  u:object_r:dt2w_event_exec:s0
+
+# Kernel Power Off Charging (KPOC)
+/system/bin/kpoc_charger u:object_r:kpoc_charger_exec:s0
+
+# GPU Labels
+/dev/mali.* u:object_r:gpu_device:s0
+/dev/mtk_disp.* u:object_r:graphics_device:s0
+
+# SysFS Labels
+/sys/devices/platform/11017000.i2c/i2c-5/5-0034/mt6370_pmu_rgbled/leds(/.*)?               u:object_r:sysfs_leds:s0
+/sys/devices/platform/leds-mt65xx/leds/lcd-backlight(/.*)?                                 u:object_r:sysfs_leds:s0
+
+# VoLTE
+/system/bin/vtservice           u:object_r:vtservice_exec:s0

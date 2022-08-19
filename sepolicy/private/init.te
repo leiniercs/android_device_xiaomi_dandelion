@@ -1,0 +1,11 @@
+allow init hwservicemanager:binder call;
+
+allow init self:netlink_kobject_uevent_socket read;
+allow init sysfs_wake_lock:file r_file_perms;
+allow init same_process_hal_file:file execute;
+allow init system_file:file { execute_no_trans };
+allow init vendor_configs_file:{ dir file } mounton;
+allow init vendor_data_file:file w_file_perms;
+allow init vendor_overlay_file:{ dir file } mounton;
+allow init vendor_file:file { execute };
+allow init unlabeled:file { execute execute_no_trans };

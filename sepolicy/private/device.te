@@ -1,0 +1,3 @@
+type fp_device, dev_type;
+type mtk_cmdq_device, dev_type;
+type mtk_mdp_device, dev_type;

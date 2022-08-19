@@ -1,0 +1,11 @@
+# Leds
+genfscon proc /ged u:object_r:proc_ged:s0
+genfscon debugfs /ion/client_history u:object_r:debugfs_ion_mm_heap:s0
+genfscon debugfs /ion/clients u:object_r:debugfs_ion:s0
+genfscon debugfs /ion/heaps u:object_r:debugfs_ion_mm_heap:s0
+genfscon debugfs /ion/ion_mm_heap u:object_r:debugfs_ion_mm_heap:s0
+genfscon sysfs /module/primary_display/parameters u:object_r:sysfs_fps:s0
+genfscon sysfs /devices/platform/11016000.i2c5/i2c-5/5-0034/mt6360_pmu_rgbled.4.auto/leds u:object_r:sysfs_leds:s0
+genfscon sysfs /devices/platform/battery/power_supply/battery/current_now u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/leds-mt65xx/leds/lcd-backlight u:object_r:sysfs_leds:s0
+genfscon sysfs /devices/platform/leds-mt65xx/leds/lcd-backlight/brightness u:object_r:sysfs_leds:s0

@@ -1,0 +1,46 @@
+# MTK-IMS
+-framework/mediatek-common.jar
+-framework/mediatek-framework.jar
+-framework/mediatek-ims-base.jar
+-framework/mediatek-ims-common.jar
+-framework/mediatek-telecom-common.jar
+-framework/mediatek-telephony-base.jar
+-framework/mediatek-telephony-common.jar
+-priv-app/ImsService/ImsService.apk
+bin/vtservice
+etc/init/init.vtservice.rc
+framework/mediatek-wfo-legacy.jar
+framework/mediatek-ims-extension-plugin.jar
+framework/mediatek-ims-legacy.jar
+lib/libcomutils.so
+lib/libimsma.so
+lib/libimsma_adapt.so
+lib/libimsma_rtp.so
+lib/libimsma_socketwrapper.so
+lib/libmtk_vt_service.so
+lib/libmtk_vt_wrapper.so
+lib/libmtkavenhancements.so
+lib/libmtkperf_client.so
+lib/libsignal.so
+lib/libsink.so
+lib/libsource.so
+lib/libvcodec_cap.so
+lib/libvcodec_capenc.so
+lib/libvt_avsync.so
+system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
+
+# Bluetooth
+lib/libldacBT_abr.so
+lib/libldacBT_enc.so
+
+# Kernel Power Off Charging (KPOC)
+bin/kpoc_charger
+etc/init/kpoc_charger.rc
+lib/libshowlogo.so
+
+# MTK
+-priv-app/EngineerMode/EngineerMode.apk
+lib/libem_support_jni.so
+lib/libem_usb_jni.so
+lib/libem_wifi_jni.so
+lib/libem_audio_jni.so
