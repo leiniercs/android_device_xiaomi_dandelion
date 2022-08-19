@@ -1,1 +1,25 @@
 # Unified Android device tree for Redmi 9A/9A Sport/9AT/9i/10A/10A Sport
+
+The Redmi 9A/9A Sport/9AT/9i/10A/10A Sport (codenamed _"dandelion"_, _"dandelion_c3l2"_, _"dandelion_id2"_) are low-end smartphones from Xiaomi.
+
+First appeared on June 30, 2020.
+
+| Basic                   | Spec Sheet                                                                                                                     |
+| -----------------------:|:------------------------------------------------------------------------------------------------------------------------------ |
+| SIM                     | Dual SIM (Nano-SIM, dual stand-by)                                                                                             |
+| Network                 | GSM / HSPA / LTE                                                                                                               |
+| CPU                     | Octa-core                                                                                                                      |
+| Chipset                 | Mediatek Helio G25                                                                                                             |
+| GPU                     | PowerVR GE8320                                                                                                                 |
+| Memory                  | 2/3/4/6 GB RAM                                                                                                                 |
+| Shipped Android Version | Android 10, MIUI 12                                                                                                            |
+| Storage                 | 32/64/128 GB, eMMC                                                                                                             |
+| Battery                 | Non-removable Li-Po 5000 mAh battery                                                                                           |
+| Display                 | 720 x 1600 pixels, 20:9 ratio (~269 ppi density)                                                                               |
+| Camera (Back)(Main)     | 13 MP,                                                                                  |
+| Camera (Front)          | 5 MP                                                                                                                           |
+| WLAN                    | Wi-Fi 802.11 b/g/n, Wi-Fi Direct, hotspot                                                                                      |
+| USB 	                  | microUSB 2.0, USB On-The-Go                                                                                                    |
+
+## Device picture
+![dandelion_c3l2](https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-10a-1.jpg)
