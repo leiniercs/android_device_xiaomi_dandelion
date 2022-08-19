@@ -1,6 +1,5 @@
 type dt2w_event, domain;
 type dt2w_event_exec, exec_type, system_file_type, file_type;
-type dt2w_event_exec, exec_type, vendor_file_type, file_type;
 
 init_daemon_domain(dt2w_event)
 
