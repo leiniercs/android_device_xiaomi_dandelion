@@ -1,9 +1,10 @@
 # Adapted from the "recovery_only" macro
-define(`system_only', ifelse(target_recovery, `true', , $1))
+#define(`system_only', ifelse(target_recovery, `true', , $1))
 
 # Define only in system because we can't skip checkpolicy
 # in recovery.
-system_only(`
+#system_only(`
+ifelse(target_recovery, `true', , `
   type rild, domain;
   set_prop(rild, deviceid_prop);
   # rild needs to read these props for IMS to work
