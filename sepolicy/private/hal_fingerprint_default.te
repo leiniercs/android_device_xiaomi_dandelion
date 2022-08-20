@@ -1,9 +1,9 @@
 type hal_fingerprint_default, domain;
-type hal_fingerprint_default_exec, exec_type, file_type, vendor_file_type;
+#type hal_fingerprint_default_exec, exec_type, file_type, vendor_file_type;
 
 typeattribute hal_fingerprint_default data_between_core_and_vendor_violators;
 
-init_daemon_domain(hal_fingerprint_default)
+#init_daemon_domain(hal_fingerprint_default)
 
 allow hal_fingerprint_default init:unix_stream_socket connectto;
 #allow hal_fingerprint_default mtee_trusty_file:dir r_dir_perms;
