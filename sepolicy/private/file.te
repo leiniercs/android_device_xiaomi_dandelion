@@ -1,5 +1,6 @@
 type debugfs_ion, fs_type, debugfs_type;
 type debugfs_ion_mm_heap, fs_type, debugfs_type;
+type debugfs_fb, fs_type, debugfs_type;
 type fp_data_file, file_type, data_file_type, core_data_file_type;
 type proc_battery_cmd, fs_type, proc_type;
 type proc_cpufreq, fs_type, proc_type;
