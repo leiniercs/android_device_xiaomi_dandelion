@@ -1,7 +1,7 @@
 type hal_fingerprint_default, domain;
 type hal_fingerprint_default_exec, exec_type, file_type, vendor_file_type;
 
-nit_daemon_domain(hal_fingerprint_default)
+init_daemon_domain(hal_fingerprint_default)
 
 typeattribute hal_fingerprint_default data_between_core_and_vendor_violators;
 
