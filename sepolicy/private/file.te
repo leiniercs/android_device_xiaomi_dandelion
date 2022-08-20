@@ -22,3 +22,4 @@ type sysfs_fps, fs_type, sysfs_type;
 type sysfs_pmu, fs_type, sysfs_type;
 type sysfs_spm, fs_type, sysfs_type;
 type sysfs_mtkfb, fs_type, sysfs_type;
+type sysfsts_novatek, fs_type, sysfs_type;
