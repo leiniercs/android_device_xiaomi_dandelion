@@ -1,2 +1,10 @@
+type mediacodec, domain;
+type mediacodec_exec, system_file_type, exec_type, file_type;
+
+init_daemon_domain(mediacodec)
+binder_use(mediacodec)
+binder_call(mediacodec, mediaserver)
+binder_service(mediacodec)
+
 allow mediacodec sysfs_bus:dir search;
 allow mediacodec sysfs_emi_ctrl:dir search;
