@@ -1,1 +1,6 @@
+type hal_health_default, domain;
+type hal_health_default_exec, exec_type, file_type, vendor_file_type;
+
+init_daemon_domain(hal_health_default)
+
 allow hal_health_default sysfs:file rw_file_perms;
