@@ -1,9 +1,9 @@
 # Policy File of /system/bin/vtservice Executable File
+type vtservice, domain;
 type vtservice_exec, system_file_type, exec_type, file_type;
-type vtservice ,domain;
 typeattribute vtservice coredomain;
+type vtservice_hidl, domain, mtkimsapdomain;
 type vtservice_hidl_exec , exec_type, file_type, vendor_file_type;
-type vtservice_hidl ,domain, mtkimsapdomain;
 
 init_daemon_domain(vtservice)
 binder_use(vtservice)
