@@ -3,4 +3,3 @@ type mtk_cmdq_device, dev_type;
 type mtk_mdp_device, dev_type;
 type adsp_device, dev_type;
 type sw_sync_device, dev_type;
-type ashmem_device, dev_type;
