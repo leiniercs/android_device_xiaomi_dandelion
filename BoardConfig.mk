@@ -146,8 +146,8 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 endif
 
 # SELinux
-include device/lineage/sepolicy/common/sepolicy.mk
-include device/mediatek/sepolicy/sepolicy.mk
+include device/mediatek/sepolicy_vndr/SEPolicy.mk
+#include device/mediatek/sepolicy/sepolicy.mk
 #SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 TARGET_USES_PREBUILT_VENDOR_SEPOLICY := true
 TARGET_HAS_FUSEBLK_SEPOLICY_ON_VENDOR := true
