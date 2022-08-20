@@ -2,7 +2,6 @@ type mtk_hal_pq_hwservice, hwservice_manager_type;
 
 # Allow untrusted_app to find mtk_hal_pq_hwservice
 add_hwservice(untrusted_app_29, mtk_hal_pq_hwservice)
-add_hwservice(untrusted_app_30, mtk_hal_pq_hwservice)
 
 allow { appdomain -isolated_app } mtk_hal_pq_hwservice:hwservice_manager find;
 
