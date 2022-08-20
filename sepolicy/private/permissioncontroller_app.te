@@ -1,2 +1,0 @@
-allow permissioncontroller_app tethering_service:service_manager find;
-allow permissioncontroller_app debugfs_ion:dir rw_dir_perms;

@@ -147,14 +147,8 @@ endif
 
 # SELinux
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
-#include device/mediatek/sepolicy/sepolicy.mk
-#SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 TARGET_USES_PREBUILT_VENDOR_SEPOLICY := true
 TARGET_HAS_FUSEBLK_SEPOLICY_ON_VENDOR := true
-#SELINUX_IGNORE_NEVERALLOWS := true
-#ifeq ($(TARGET_BUILD_VARIANT),user)
-#SELINUX_IGNORE_NEVERALLOWS_ON_USER := true
-#endif
 
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_dandelion
