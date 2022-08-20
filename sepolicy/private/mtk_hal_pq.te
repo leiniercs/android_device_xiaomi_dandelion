@@ -4,3 +4,12 @@ type mtk_hal_pq_exec, exec_type, file_type, vendor_file_type;
 init_daemon_domain(mtk_hal_pq)
 
 set_prop(mtk_hal_pq, mtk_pq_prop)
+
+type mtk_hal_pq_hwservice, hwservice_manager_type;
+
+# Allow untrusted_app to find mtk_hal_pq_hwservice
+add_hwservice(untrusted_app_29, mtk_hal_pq_hwservice)
+add_hwservice(untrusted_app_30, mtk_hal_pq_hwservice)
+
+allow { appdomain -isolated_app } mtk_hal_pq_hwservice:hwservice_manager find;
+
