@@ -7,5 +7,5 @@ system_only(`
   type rild, domain;
   set_prop(rild, deviceid_prop);
   # rild needs to read these props for IMS to work
-  allow rild exported3_default_prop:file r_file_perms;
+  allow rild exported_default_prop:file r_file_perms;
 ');
