@@ -1,4 +1,4 @@
-#type hal_fingerprint_default, domain;
+type hal_fingerprint_default, domain, coredomain;
 #type hal_fingerprint_default_exec, exec_type, file_type, vendor_file_type;
 
 typeattribute hal_fingerprint_default data_between_core_and_vendor_violators;
