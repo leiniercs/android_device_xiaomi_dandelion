@@ -5,7 +5,7 @@ allow gmscore_app mtk_mdp_device:chr_file rw_file_perms;
 allow gmscore_app sw_sync_device:chr_file rw_file_perms;
 
 # failed with "unknown type mtk_hal_pq_hwservice"
-#allow gmscore_app mtk_hal_pq_hwservice:hwservice_manager find;
+allow gmscore_app mtk_hal_pq_hwservice:hwservice_manager find;
 binder_call(gmscore_app, mtk_hal_pq)
 
 get_prop(gmscore_app, render_prop)
