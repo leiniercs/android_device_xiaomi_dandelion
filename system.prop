@@ -159,7 +159,6 @@ debug.kill_allocating_task=0
 persist.sys.use_dithering=1
 
 # GPU Perf
-force_hw_ui=true
 ro.sf.compbypass.enable=0
 hwui.render_dirty_regions=false
 ro.max.fling_velocity=20000
