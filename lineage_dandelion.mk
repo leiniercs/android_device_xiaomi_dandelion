@@ -23,7 +23,7 @@ TARGET_BOOT_ANIMATION_RES := 720
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_FORCE_PREBUILT_KERNEL := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
-TARGET_NO_RECOVERY := false
+TARGET_NO_RECOVERY := true
 TARGET_USES_BLUR := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
@@ -50,7 +50,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-# 'vendor_load_properties' function on 'init/init_dandelion.cpp' must be updated with Android Version ID
+# 'vendor_load_properties()' function on 'init/init_dandelion.cpp' must be updated with Android Version ID
 BUILD_FINGERPRINT := google/raven/raven:12/SQ3A.220705.004/8233519:user/release-keys
 
 PRODUCT_PROPERTY_OVERRIDES += \
