@@ -119,7 +119,7 @@ PRODUCT_PACKAGES += \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \
-    libhwbinder.vendor    
+    libhwbinder.vendor
 
 # Light
 PRODUCT_PACKAGES += \
