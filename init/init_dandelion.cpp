@@ -28,9 +28,7 @@
  */
 
 #include <cstdlib>
-#include <stdlib.h>
 #include <fstream>
-#include <string.h>
 #include <sys/sysinfo.h>
 #include <unistd.h>
 

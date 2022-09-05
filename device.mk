@@ -96,8 +96,8 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/dt2w/dt2w_event:$(TARGET_COPY_OUT_SYSTEM)/bin/dt2w_event
 
 # fastbootd
-PRODUCT_PACKAGES += \
-    fastbootd
+##PRODUCT_PACKAGES += \
+##    fastbootd
 #    android.hardware.fastboot@1.1-impl-mock \
 
 # Freeform Multiwindow
