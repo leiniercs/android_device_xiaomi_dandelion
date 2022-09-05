@@ -46,7 +46,7 @@ BOARD_BOOT_HEADER_VERSION := 2
 BOARD_DTB_OFFSET := 0x07808000
 BOARD_KERNEL_BASE := 0x40078000
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 \
-                        androidboot.init_fatal_reboot_target=recovery
+                        androidboot.init_fatal_reboot_target=bootloader
 BOARD_KERNEL_OFFSET := 0x00008000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_SECOND_OFFSET := 0x00e88000
@@ -132,6 +132,7 @@ TARGET_USES_64_BIT_BINDER := true
 MALLOC_SVELTE := true
 
 # Recovery
+TARGET_NO_RECOVERY := false
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6765
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_RECOVERY_UI_BLANK_UNBLANK_ON_INIT := true
@@ -148,7 +149,6 @@ TARGET_HAS_FUSEBLK_SEPOLICY_ON_VENDOR := true
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_dandelion
 TARGET_RECOVERY_DEVICE_MODULES := libinit_dandelion
-
 
 # Display
 TARGET_USES_HWC2 := true
