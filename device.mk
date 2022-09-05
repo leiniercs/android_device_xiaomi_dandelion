@@ -72,7 +72,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Audio
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/audio_policy_configuration.xml \
+    $(DEVICE_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/audio_policy_configuration.xml \
     $(DEVICE_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_configuration.xml
 
 PRODUCT_PACKAGES += \
@@ -102,7 +102,7 @@ PRODUCT_PACKAGES += \
 
 # Freeform Multiwindow
 PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.software.freeform_window_management.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.freeform_window_management.xml    
+    frameworks/native/data/etc/android.software.freeform_window_management.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.freeform_window_management.xml
 
 # Health
 PRODUCT_PACKAGES += \
@@ -129,8 +129,8 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.0
 
 # IMS
-PRODUCT_PACKAGES += \
-    ImsServiceBase
+##PRODUCT_PACKAGES += \
+##    ImsServiceBase
 
 PRODUCT_PACKAGES += \
     ImsInit
@@ -163,8 +163,8 @@ PRODUCT_COPY_FILES += \
 
 # [DNM] Temp permissions
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/permissions/xyz.extras.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/xyz.extras.xml \
-    $(LOCAL_PATH)/permissions/xyz.extras.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/xyz.extras.xml 
+    $(DEVICE_PATH)/permissions/xyz.extras.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/xyz.extras.xml \
+    $(DEVICE_PATH)/permissions/xyz.extras.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/xyz.extras.xml 
 
 # Public libraries
 PRODUCT_COPY_FILES += \
@@ -183,9 +183,7 @@ PRODUCT_PACKAGES += com.android.tethering.inprocess
 # Input
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/idc/uinput-fpc.idc:system/usr/idc/uinput-fpc.idc \
-    $(DEVICE_PATH)/configs/idc/uinput-focaltech.idc:system/usr/idc/uinput-focaltech.idc
-
-PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/idc/uinput-focaltech.idc:system/usr/idc/uinput-focaltech.idc \
     $(DEVICE_PATH)/configs/keylayout/uinput-fpc.kl:system/usr/keylayout/uinput-fpc.kl \
     $(DEVICE_PATH)/configs/keylayout/uinput-focaltech.kl:system/usr/keylayout/uinput-focaltech.kl
 
@@ -204,12 +202,12 @@ PRODUCT_PACKAGES += \
     NotchBarKiller
 
 # Symbols
-PRODUCT_PACKAGES += \
-    libshim_mtk_vt_service \
-    libshim_sink
+##PRODUCT_PACKAGES += \
+##    libshim_mtk_vt_service \
+##    libshim_sink
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/xiaomi/dandelion/dandelion-vendor.mk)
+##$(call inherit-product, vendor/xiaomi/dandelion/dandelion-vendor.mk)
