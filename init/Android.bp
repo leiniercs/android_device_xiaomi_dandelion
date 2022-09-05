@@ -13,13 +13,13 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 //
-//    recovery_available: false,
 cc_library_static {
     name: "libinit_dandelion",
     srcs: ["init_dandelion.cpp"],
+    recovery_available: true,
     shared_libs: ["libbase"],
     include_dirs: [
         "system/libbase/include",
-        "system/core/init",
+        "system/core/init"
     ],
 }
