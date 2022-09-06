@@ -22,6 +22,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
+# Get non-open-source specific aspects
+##$(call inherit-product, vendor/xiaomi/dandelion/dandelion-vendor.mk)
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
@@ -177,8 +180,9 @@ PRODUCT_PACKAGES += \
     RcsService
 
 # Do not spin up a separate process for the network stack, use an in-process APK.
-PRODUCT_PACKAGES += InProcessNetworkStack
-PRODUCT_PACKAGES += com.android.tethering.inprocess
+PRODUCT_PACKAGES += \
+    InProcessNetworkStack \
+    com.android.tethering.inprocess
 
 # Input
 PRODUCT_COPY_FILES += \
@@ -208,6 +212,3 @@ PRODUCT_PACKAGES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
-
-# Get non-open-source specific aspects
-##$(call inherit-product, vendor/xiaomi/dandelion/dandelion-vendor.mk)
