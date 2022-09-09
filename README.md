@@ -1,3 +1,5 @@
+![Build status](https://badgen.net/badge/building/success/green?icon=github)
+
 # Unified Android device tree for Redmi 9A/9A Sport/9AT/9i/10A/10A Sport
 
 The Redmi 9A/9A Sport/9AT/9i/10A/10A Sport (codenamed _"dandelion"_, _"dandelion_c3l2"_, _"dandelion_id2"_) are low-end smartphones from Xiaomi.
