@@ -1,4 +1,4 @@
-![Build status](https://badgen.net/badge/building/success/green?icon=github)
+!\[Build status\](https://badgen.net/badge/building/success/green?icon=github)
 
 # Unified Android device tree for Redmi 9A/9A Sport/9AT/9i/10A/10A Sport
 
