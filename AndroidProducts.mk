@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/lineage_dandelion.mk
+   $(LOCAL_DIR)/arrow_dandelion.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_dandelion-user \
-    lineage_dandelion-userdebug \
-    lineage_dandelion-eng
+    arrow_dandelion-user \
+    arrow_dandelion-userdebug \
+    arrow_dandelion-eng
