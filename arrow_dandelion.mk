@@ -27,13 +27,13 @@ TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
 # Inherit from AOSP
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/arrow/config/common_full_phone.mk)
 
 # Inherit from garden device makefile
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_dandelion
+PRODUCT_NAME := arrow_dandelion
 PRODUCT_DEVICE := dandelion
 PRODUCT_BRAND := Redmi
 PRODUCT_MANUFACTURER := xiaomi
